@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="rockPaperScissor.css">
+</head>
+<body>
+  <p class="heading">Rock Paper scissor - objects</p> 
+
+  <button onclick="
+  fxn1();
+  fxn2('rock');
+   
+" class="move-button"><img src="rock-emoji.png" class="icon"></button>
+  
+  <button onclick="
+  fxn1();
+  fxn2('paper');
+  
+" class="move-button"><img src="paper-emoji.png" class="icon"></button>
+
+  <button onclick="
+    fxn1();
+    fxn2('scissor');
+   
+" class="move-button"><img src="scissor-emoji.png" class="icon"></button>
+
+<p class="js-result result">You Win</p>
+<p class="js-moves"></p>
+<p class="js-score score"></p>
+
+<button onclick="
+score.wins=0;
+score.losses=0;
+score.ties=0;
+localStorage.removeItem('score');
+updateScoreElement();
+" class="reset">Reset Score</button>
+
+<script src="rockPaperScissor.js"></script>
+
+<p class="footer">Made By VICKY MAHTO</p>
+</body>
+</html>
